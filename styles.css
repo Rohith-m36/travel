@@ -1,8 +1,11 @@
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
-
+  margin: 0;
+  padding: 0;
 }
 
+/* Navbar Styles */
 .navbar-nav .nav-link {
   transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -13,6 +16,7 @@ body {
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
+/* Link Hover Effect */
 .animated-link {
   position: relative;
 }
@@ -43,42 +47,32 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   color: #ffffff;
-  height: 500px;
+  height: 500px; 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   border-bottom: 5px solid #00796b;
-  animation: slideshow 20s linear infinite;
+  animation: slideshow 30s linear infinite;
 }
-
-/* Define the slideshow animation */
-@keyframes slideshow {
-  0% { background-image: url('img/Char-Dham-Yatra-Package-Delhi.jpg'); }
-  25% { background-image: url('img/second-image.jpg'); }
-  50% { background-image: url('img/third-image.jpg'); }
-  75% { background-image: url('img/fourth-image.jpg'); }
-  100% { background-image: url('img/Char-Dham-Yatra-Package-Delhi.jpg'); }
-}
-
 
 @keyframes slideshow {
   0% {
     background-image: url('img/Char-Dham-Yatra-Package-Delhi.jpg');
   }
-  15.6% {
+  16.6% {
     background-image: url('img/kedback.jpg');
   }
-  30.9% {
+  33.2% {
     background-image: url('img/badback.jpg');
   }
-  45.2% {
+  49.8% {
     background-image: url('img/yamback.jpg');
   }
-  60.5% {
+  66.4% {
     background-image: url('img/gangotri.jpg');
   }
-  75.8% {
+  83% {
     background-image: url('img/rishbac.jpg');
   }
   100% {
@@ -93,7 +87,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
   z-index: 1;
 }
 
@@ -124,7 +118,7 @@ header p {
   }
 }
 
-
+/* Place Section Styles */
 .place-section {
   padding: 60px 0;
   background-color: #ffffff;
@@ -141,6 +135,7 @@ header p {
   transform: scale(1.05);
 }
 
+/* Footer Styles */
 footer {
   background-color: #343a40;
   color: #ffffff;
@@ -166,8 +161,10 @@ h2 {
   }
 }
 
+/* List Styles */
 ul.list-unstyled {
   padding-left: 0;
+  list-style: none;
 }
 
 ul.list-unstyled li {
@@ -194,11 +191,13 @@ i.fas {
   margin-right: 10px;
 }
 
+/* Contact Section Styles */
 #contact {
   background-color: #f8f9fa;
   padding: 30px 0;
 }
 
+/* Grid System */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -209,6 +208,7 @@ i.fas {
   padding: 1rem;
 }
 
+/* Form Styles */
 .form-control {
   border-radius: 8px;
   border: 1px solid #ced4da;
@@ -222,6 +222,7 @@ textarea.form-control {
   height: 150px;
 }
 
+/* Button Styles */
 .btn-primary {
   background-color: #00796b;
   border-color: #00796b;
@@ -236,6 +237,7 @@ textarea.form-control {
   border-color: #004d40;
 }
 
+/* Responsive Styles */
 @media (max-width: 767.98px) {
   .col-md-6 {
       flex: 1 0 100%;
@@ -243,6 +245,7 @@ textarea.form-control {
   }
 }
 
+/* Section Styles */
 section {
   background-color: #f8f9fa;
   color: #333;
@@ -253,22 +256,6 @@ h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #00796b;
-}
-
-ul.list-unstyled {
-  list-style: none;
-  padding: 0;
-}
-
-ul.list-unstyled li {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-i.fas {
-  margin-right: 10px;
 }
 
 html {
