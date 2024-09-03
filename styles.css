@@ -49,7 +49,7 @@ header {
   justify-content: center;
   text-align: center;
   border-bottom: 5px solid #00796b;
-  animation: slideshow 60s linear infinite;
+  animation: slideshow 30s linear infinite;
 }
 
 @keyframes slideshow {
