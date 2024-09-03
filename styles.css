@@ -1,0 +1,266 @@
+body {
+  font-family: Arial, sans-serif;
+
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa;
+  transform: scale(1.05);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.animated-link {
+  position: relative;
+}
+
+.animated-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: #f8f9fa;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.animated-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Header Styles */
+header {
+  position: relative;
+  background-image: url('img/Char-Dham-Yatra-Package-Delhi.jpg');
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  height: 500px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 5px solid #00796b;
+  animation: slideshow 60s linear infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    background-image: url('img/Char-Dham-Yatra-Package-Delhi.jpg');
+  }
+ 
+  15.6% {
+    background-image: url('img/kedback.jpg');
+  }
+  30.9% {
+    background-image: url('img/badback.jpg');
+  }
+  45.2% {
+    background-image: url('img/yamback.jpg');
+  }
+  60.5% {
+    background-image: url('img/gangotri.jpg');
+  }
+  75.8% {
+    background-image: url('img/rishbac.jpg');
+  }
+  100% {
+    background-image: url('img/harback.jpg');
+  }
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+header h1, header p {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  animation: fadeIn 2s ease-out;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.5rem;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.place-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.place-section img {
+  max-height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.place-section img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #00796b;
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+ul.list-unstyled {
+  padding-left: 0;
+}
+
+ul.list-unstyled li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+i.fas {
+  color: #007bff;
+  margin-right: 10px;
+}
+
+#contact {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  flex: 1;
+  padding: 1rem;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+textarea.form-control {
+  height: 150px;
+}
+
+.btn-primary {
+  background-color: #00796b;
+  border-color: #00796b;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #004d40;
+  border-color: #004d40;
+}
+
+@media (max-width: 767.98px) {
+  .col-md-6 {
+      flex: 1 0 100%;
+      margin-bottom: 1rem;
+  }
+}
+
+section {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 2rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00796b;
+}
+
+ul.list-unstyled {
+  list-style: none;
+  padding: 0;
+}
+
+ul.list-unstyled li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+i.fas {
+  margin-right: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
