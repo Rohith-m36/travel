@@ -43,14 +43,24 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   color: #ffffff;
-  height: 500px; 
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   border-bottom: 5px solid #00796b;
-  animation: slideshow 30s linear infinite;
+  animation: slideshow 20s linear infinite;
 }
+
+/* Define the slideshow animation */
+@keyframes slideshow {
+  0% { background-image: url('img/Char-Dham-Yatra-Package-Delhi.jpg'); }
+  25% { background-image: url('img/second-image.jpg'); }
+  50% { background-image: url('img/third-image.jpg'); }
+  75% { background-image: url('img/fourth-image.jpg'); }
+  100% { background-image: url('img/Char-Dham-Yatra-Package-Delhi.jpg'); }
+}
+
 
 @keyframes slideshow {
   0% {
